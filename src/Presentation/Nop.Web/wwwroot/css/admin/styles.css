@@ -1310,9 +1310,11 @@ input[type="text"].k-input {
 
 .sidebar {
   overflow:hidden;
+  
 }
 
 .nav-sidebar {
+ 
   padding-bottom: 40px;
 }
 
@@ -1427,6 +1429,8 @@ div.dataTables_wrapper div.dataTables_processing .fa {
 /* NAV BAR */
 .navbar-custom-menu > .navbar-nav > li {
   height: 50px;
+  background: rgb(255,193,0);
+  background: radial-gradient(circle, rgba(255,193,0,1) 0%, rgba(255,252,0,1) 50%, rgba(18,5,25,1) 100%);
 }
 
 .navbar-custom-menu li.account-info {

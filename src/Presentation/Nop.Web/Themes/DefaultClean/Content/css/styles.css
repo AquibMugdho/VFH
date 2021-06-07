@@ -26,6 +26,7 @@ ol, ul {
 
 a img {
   border: none;
+
 }
 
 button::-moz-focus-inner,
@@ -74,9 +75,11 @@ script {
 body {
   max-width: 100%;
   overflow-x: hidden;
-  background-color: #fff;
+  background: rgb(244,221,8);
+  background: linear-gradient(0deg, rgba(244,221,8,1) 0%, rgba(230,206,29,1) 35%, rgba(244,221,8,1) 66%, rgba(64,63,69,1) 100%);
   font: normal 14px Arial, Helvetica, sans-serif;
-  color: #777;
+  font-palette: light;
+  /*color: #777;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -984,6 +987,7 @@ label, label + * {
 .header-logo {
   margin: 0 0 20px;
   text-align: center;
+ 
 }
 
 .header-logo a {
@@ -992,10 +996,11 @@ label, label + * {
   line-height: 0; /*firefox line-height bug fix*/
 }
 
-.header-logo a img {
-  max-width: 100%;
-  opacity: 1;
-}
+  .header-logo a img {
+    max-width: 100%;
+    opacity: 1;
+  
+  }
 
 .search-box form {
   display: inline-block;
@@ -1093,8 +1098,9 @@ label, label + * {
 
 
 .footer {
-  background-color: #eee;
+  background: #403f45;
   text-align: center;
+  color: white;
 }
 
 .footer-upper {
@@ -1139,22 +1145,23 @@ label, label + * {
   line-height: 20px;
 }
 
-.footer-block .list a:hover,
-.footer-block .list a:focus {
-  color: #4ab2f1;
-}
+  .footer-block .list a:hover,
+  .footer-block .list a:focus {
+    color: yellow;
+  }
 
 .follow-us {
+  color: white;
   margin: 30px auto 0;
   text-align: center;
 }
 
-.follow-us .title {
-  margin: 0 0 10px;
-  background: none;
-  color: #444;
-  cursor: auto;
-}
+  .follow-us .title {
+    margin: 0 0 10px;
+    background: none;
+    color: white;
+    cursor: auto;
+  }
 
 .follow-us .social ul {
   margin: 0 0 30px;
@@ -1168,13 +1175,14 @@ label, label + * {
   margin: 0 5px;
 }
 
-.follow-us .social a {
-  display: block;
-  width: 38px;
-  height: 38px;
-  background: url('../images/social-sprite.png') no-repeat;
-  font-size: 0;
-}
+  .follow-us .social a {
+    color: white;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: url('../images/social-sprite.png') no-repeat;
+    font-size: 0;
+  }
 
 .follow-us .social .facebook a {
   background-position: 0 0;
@@ -1289,22 +1297,23 @@ label, label + * {
 
 
 .block {
+
   max-width: 600px; /*width limit in mobile*/
   min-height: 50px;
   margin: auto;
   text-align: left;
 }
 
-.block .title {
-  position: relative;
-  margin: 0 0 10px;
-  border-bottom: 1px solid #ddd;
-  background: #f6f6f6 url('../images/toggle-gray.png') right 14px no-repeat;
-  padding: 12px 30px 12px 10px;
-  font-size: 20px;
-  color: #444;
-  cursor: pointer;
-}
+  .block .title {
+    position: relative;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #ddd;
+    background: yellow url('../images/toggle-gray.png') right 14px no-repeat;
+    padding: 12px 30px 12px 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
 
 .block .title strong {
   font-weight: normal;
@@ -6834,6 +6843,7 @@ pre {
 
 
   .footer-block {
+      color: white;
     width: 85%;
   }
 
@@ -7022,13 +7032,14 @@ pre {
     vertical-align: top;
   }
 
-  .footer-block .title {
-    margin: 0 0 15px;
-    background: none;
-    padding: 0;
-    color: #444;
-    cursor: auto;
-  }
+    .footer-block .title {
+      color: white;
+      margin: 0 0 15px;
+      background: none;
+      padding: 0;
+      color: #444;
+      cursor: auto;
+    }
 
   .footer-block .list {
     display: block !important; /* prevents toggle display:none on resize */
@@ -8061,6 +8072,8 @@ pre {
   .footer-upper {
     width: 980px;
     padding: 35px 10px;
+
+
   }
 
   .footer-upper:after {

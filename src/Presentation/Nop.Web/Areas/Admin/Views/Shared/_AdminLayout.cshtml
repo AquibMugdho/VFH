@@ -135,7 +135,7 @@
 <!DOCTYPE html>
 <html lang="@languageService.GetTwoLetterIsoLanguageName(await workContext.GetWorkingLanguageAsync())" @(supportRtl ? Html.Raw(" dir=\"rtl\"") : null)>
 <head>
-    <title>@adminPageTitle</title>
+    <title>VFH admin panel</title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     @*Google Font*@
@@ -331,7 +331,7 @@
                                 @((await dateTimeHelper.ConvertToUserTimeAsync(DateTime.Now)).ToString("f", currentCulture))
                             </div>
                             <div class="col-md-4 col-xs-12 text-md-right text-center">
-                                <b>nopCommerce version @NopVersion.FULL_VERSION</b>
+                                @*<b>nopCommerce version @NopVersion.FULL_VERSION</b>*@
                             </div>
                         </div>
                     </div>
